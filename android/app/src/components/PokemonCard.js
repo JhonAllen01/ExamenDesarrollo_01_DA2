@@ -17,23 +17,28 @@ const PokemonCard = ({ pokemon }) => {
 };
 
 const styles = StyleSheet.create({
-  card: {
-    backgroundColor: 'white',
-    marginBottom: 10,
-    borderRadius: 10,
-    overflow: 'hidden',
-    flexDirection: 'row',
-    alignItems: 'center',
-    padding: 10,
-  },
-  cardImage: {
-    width: 50,
-    height: 50,
-    marginRight: 10,
-  },
-  cardText: {
-    fontSize: 18,
-  },
-});
+    card: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: 'white',
+      borderRadius: 10,
+      marginBottom: 10,
+      shadowColor: '#000',
+      shadowOpacity: 0.1,
+      shadowRadius: 5,
+      shadowOffset: { width: 0, height: 2 },
+      elevation: 3, // Solo para Android
+      padding: 10,
+    },
+    cardImage: {
+      width: 50,
+      height: 50,
+      marginRight: 10,
+    },
+    cardText: {
+      fontSize: 18,
+      fontWeight: 'bold',
+    },
+  });
 
 export default PokemonCard;
